@@ -8,9 +8,29 @@ body {
 	width: 940px;
 	margin: 0 auto;
 }
-
 header a {
 	width: 220px;
 	display: block;
 	margin: 0 auto;
+}
+nav {
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+
+nav h2 {
+	display: none;
+}
+nav p {
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: center;
+	padding-top: 14px;
+	padding-bottom: 11px;
+	font-size: 12px;
+
+}
+a:link {text-decoration: none; color: #cccccc;}
+a:visited{text-decoration: none}
+a:active {text-decoration: none}
+a:hover {text-decoration: underline; color: orange;}
 }
