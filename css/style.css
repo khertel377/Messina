@@ -9,14 +9,17 @@
     font-style: normal;
 
 }
+
 body {
 	margin: 0;
 	padding: 0;
 	font-family: georgia, garamond, times, serif;
 }
+
 p {
 	margin-top: 0;
 }
+
 h2 {
 	font-family: 'junction_regularregular';
 	font-size: 30px;
@@ -30,6 +33,10 @@ p {
 form {
 	margin-bottom: 39px;
 }
+
+a {
+	text-decoration: none;
+}
 /* Select all elements whose class attribute includes "contain" */
 .contain {
 	width: 940px;
@@ -42,7 +49,8 @@ form {
 }
 /*clearfixes*/
 #content-wrapper:after,
-#body-footer .contain:after {
+#body-footer .contain:after,
+#product-list:after {
 	content: "";
 	display: table;
 	clear:both;
@@ -124,6 +132,7 @@ form {
 	border: solid 1px #d8e3e8;
 	line-height: 28px;
 	width: 154px;
+	float: left;
 }
 
 #sidebar button {
@@ -134,7 +143,7 @@ form {
 	font: normal 12px 'junction_regularregular';
 	color: #99a0a3;
 	letter-spacing: -1px;
-	padding-bottom: 1px;
+	float: right;
 }
 #sidebar-title {
 	font: normal 18px/40px 'junction_regularregular';
@@ -205,6 +214,76 @@ form {
 	margin-top: 10px;
 }
 
+/*PRODUCT LIST */
+
+li:after {
+
+}
+
+#product-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#product-list li {
+	float: left;
+	margin: 0 20px 20px 0;
+	width: 220px;
+	height: 220px;
+	background-color: rgba(0,0,0,.4);
+	position: relative;
+}
+/* every third list item has no margin right */
+#product-list li:nth-of-type(3n) {
+	margin-right: 0;
+}
+
+#product-list h2,
+#product-list p {
+	font-size: 100%;
+	font-family: 'junction_regularregular';
+	color: #f4f4f4;
+	text-align: center;
+}
+
+#product-list p {
+	font-size: 87.5%;
+	position: absolute; 
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+
+}
+
+#product-list h2 {
+	position: absolute; 
+	top: 11px;
+	width: 100%;
+	text-align: center;
+}
+
+#product-list span {
+	position: absolute; 
+	bottom: 52px;
+	width: 98px;
+	left: 50%;
+	margin-left: -49px;
+	background: #ffffff;
+	text-align: center;
+	font-family: 'junction_regularregular';
+	font-size: 75%;
+	text-transform: uppercase;
+	color: #666666;
+	border-top: solid 1px #cccccc;
+	border-left: solid 1px #cccccc;
+	border-right: solid 1px #666666;
+	border-bottom: solid 1px #666666;
+	-webkit-box-shadow: .5px .5px 0px 0px #000000;
+	padding-top: 8px;
+	padding-bottom: 6px;
+
+}
 
 
 
